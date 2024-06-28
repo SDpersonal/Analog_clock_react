@@ -27,7 +27,7 @@ const Clock = () => {
   return (
     <div>
       <div className="controls">
-        <a href="https://github.com/SDpersonal/Analog_clock" target="blank">
+        <a href="https://github.com/SDpersonal/Analog_clock_react" target="blank">
           <img src="assets/img/Github.png" alt="icon" height="40px" />
           &nbsp;CoderXSubham
         </a>
