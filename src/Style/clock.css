@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+
+}
+
+
+.container{
+    position: relative;
+}
+
+.controls{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    height: 120px;
+    width: 190px;
+}
+
+.controls a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 15px 11px rgb(32 32 32 / 90%), inset 0px 0px 6px 4px #888888;
+}
+.clock {
+    height: 22em;
+    width: 22em;
+    border-radius: 40px;
+    box-shadow: 0px 1px 15px 11px rgb(17 17 17 / 90%), inset 0px 0px 6px 0px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    padding: 2px;
+    text-align: center;
+}
+.number{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
+
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hrs-hand{
+    position: absolute;
+    height: 70px;
+    width: 6px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: rgb(247, 35, 134);
+}
+
+.mint-hand{
+    position: absolute;
+    height: 90px;
+    width: 6px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: rgb(162, 255, 0);
+}
+
+.sec-hand{
+    position: absolute;
+    height: 110px;
+    width: 6px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: rgb(0, 255, 204);
+}
+
+.pointer{
+    position: relative;
+    height: 8px;
+    width: 8px;
+    border: 4px groove white;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
